@@ -20,8 +20,25 @@ body {
     padding: 40px 0;
 }
 .text-img h3 {
-    font-size:20px
+    font-size:20px;
+    margin-top:0px;
+}
+.text-img p {
+    font: size 16px;
 }
 .sneaker-img{
     width: 100%;
+    border: 1px solid black;
+}
+.link-dotted {
+    color:#ef5839;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+.link-dotted:hover, .link-dotted:active {
+    color: #d4b44c;
+}
+.container {
+    width: 620px;
+    margin:0 auto;
 }
