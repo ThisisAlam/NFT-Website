@@ -1,12 +1,42 @@
+/* Body */
 body {
     font-family:sans-serif;
     margin:0;
 }
-.header {
+
+/* Purple - Background color & 
+  Whitesmoke - Text color */
+.header, .section2 {
     background: #5f29a3;
     color:whitesmoke;
+}
+
+/* header & footer => padding:45px 0 45px 0; */
+.header, .footer {
     padding:45px 0 45px 0;
 }
+
+/* section1 & section2 => padding: 40px 0; */
+.section1, .section2 {
+    padding: 40px 0;
+}
+
+/* All containers Width */
+.container {
+    width: 620px;
+    margin:0 auto;
+}
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5f29a3;
+}
+
+
+
+/* typography  from both Section1 & Section2 */
 .header h1 {
     font-size:36px;
     margin:0;
@@ -16,29 +46,73 @@ body {
     font-size:20px;
     margin:0;
 }
-.text-img {
-    padding: 40px 0;
-}
-.text-img h3 {
+.section1 h3 {
     font-size:20px;
     margin-top:0px;
 }
-.text-img p {
+.section1 p, .section2 p {
     font: size 16px;
+    line-height: 22px;
 }
-.sneaker-img{
-    width: 100%;
-    border: 1px solid black;
+
+
+
+/* images from both Section1 & Section2 */
+.section1 .sneaker-img{
+    width: 100%;  
 }
-.link-dotted {
+.section2 img {
+    max-width: 300px; 
+    border-radius: 4.6px;
+}
+.section2 .img {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+/* Links buttons from both Section1 & Section2 */
+.link-btn {
     color:#ef5839;
-    text-decoration-line: underline;
+    text-decoration-line: none;
     text-decoration-style: dotted;
+    padding: 10px 19px;
+    border-radius: 4.6px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
-.link-dotted:hover, .link-dotted:active {
-    color: #d4b44c;
+.link-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 2px grey;
 }
-.container {
-    width: 620px;
-    margin:0 auto;
+.link-btn:active {
+    transform: translateY(3px);
+    box-shadow: 0 0 3px grey;
+}
+.link-btn#buy-nft {
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
+.link-btn#buy-nft:hover, .link-btn#buy-nft:active {
+    background-color: #f3e885;
+    color: #2b283a;
+}
+.link-btn#more-info {
+    background-color: #f0e0ff;
+    color: #5f29a3;
+}
+.link-btn#about-us {
+    background-color: whitesmoke;
+    color: #5f29a3;
+}
+.link-btn#contact {
+    background-color: #f0e0ff;
+    color: #5f29a3;
 }
